@@ -7,7 +7,21 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { QuickActionsComponent } from './quick-actions/quick-actions.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {
+  FontAwesomeModule,
+  FaIconLibrary,
+} from '@fortawesome/angular-fontawesome';
+
+import { faSquare, faCheckSquare } from '@fortawesome/free-solid-svg-icons';
+import {
+  faSquare as farSquare,
+  faCheckSquare as farCheckSquare,
+} from '@fortawesome/free-regular-svg-icons';
+import {
+  faStackOverflow,
+  faGithub,
+  faMedium,
+} from '@fortawesome/free-brands-svg-icons';
 
 @NgModule({
   declarations: [
@@ -15,14 +29,22 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     DashboardComponent,
     QuickActionsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FontAwesomeModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    library.addIcons(
+      faSquare,
+      faCheckSquare,
+      farSquare,
+      farCheckSquare,
+      faStackOverflow,
+      faGithub,
+      faMedium
+    );
+  }
+}
