@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faUmbrella } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-quick-actions',
@@ -7,7 +7,8 @@ import { faUmbrella } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./quick-actions.component.scss']
 })
 export class QuickActionsComponent implements OnInit {
-  faCoffee = faUmbrella;
+  faPlus = faPlus;
+  faMinus = faMinus;
   constructor() { }
 
   ngOnInit(): void {
