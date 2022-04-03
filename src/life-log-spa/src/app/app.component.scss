@@ -1,6 +1,7 @@
+@import './../variables.scss';
 .main {
   height: 100vh;
-  background-color: #2d89ef;
+  background-color: $blue;
   .content {
     border: 5px dotted pink;
   }
