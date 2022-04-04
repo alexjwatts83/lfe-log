@@ -2,7 +2,7 @@
 .dashboard-container {
   .summary-container {
     background-color: $yellow;
-    border: 3px dashed $dark-red;
-    margin: 20px 0px 0px;
+    border: $large-border dashed $dark-red;
+    margin: $small-spacer 0px 0px;
   }
 }

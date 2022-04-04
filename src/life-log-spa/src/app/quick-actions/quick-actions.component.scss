@@ -2,7 +2,7 @@
 
 .quick-actions-container {
   background-color: $light-blue;
-  border: 3px dashed $dark-blue;
+  border: $large-border dashed $dark-blue;
   .quick-action {
     border: 1px solid red;
     span.quick-action-task {
