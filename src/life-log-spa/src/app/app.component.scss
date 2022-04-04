@@ -3,6 +3,7 @@
   height: 100vh;
   background-color: $main-bg-colour;
   .content {
-    border: 5px dotted pink;
+    border: 0px dotted $content-bg-colour;
+    background-color: $content-bg-colour;
   }
 }
