@@ -1,7 +1,8 @@
+@import './../../variables.scss';
 .dashboard-container {
   .summary-container {
-    background-color: #ffc40d;
-    border: 3px dashed #b91d47;
+    background-color: $yellow;
+    border: 3px dashed $dark-red;
     margin: 20px 0px 0px;
   }
 }
