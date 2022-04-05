@@ -1,0 +1,5 @@
+@import './../../variables.scss';
+footer {
+  border-top: $large-border dotted $dark-green;
+  margin-top: $small-spacer;
+}
