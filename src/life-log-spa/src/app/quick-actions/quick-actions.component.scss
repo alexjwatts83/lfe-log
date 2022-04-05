@@ -4,7 +4,9 @@
   background-color: $light-blue;
   border: $large-border dashed $dark-blue;
   .quick-action {
-    border: 1px solid red;
+    input {
+      width: $input-width;
+    }
     span.quick-action-task {
       font-weight: $bold;
       font-family: 'Courier New', Courier, monospace;

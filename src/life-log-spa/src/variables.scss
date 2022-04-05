@@ -10,5 +10,10 @@ $small-spacer: 10px;
 $spacer: 20px;
 
 $large-border: 5px;
+$input-width: 100px;
 $main-bg-colour: $blue;
 $content-bg-colour: $dark-blue;
+
+@mixin container-border($colour) {
+  border: $large-border solid $colour;
+}
