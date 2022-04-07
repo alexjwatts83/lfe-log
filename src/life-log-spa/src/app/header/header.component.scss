@@ -1,9 +1,9 @@
 .menu {
   display: flex;
-  .menu-item, fa-icon {
-    cursor: pointer;
-    a {
-      text-decoration: none;
+  .menu-item {
+    text-decoration: none;
+    span {
+      font-variant: small-caps;
     }
   }
 }
