@@ -1,3 +1,5 @@
+@import './../../variables.scss';
+
 .menu {
   display: flex;
   .menu-item {
@@ -6,4 +8,6 @@
       font-variant: small-caps;
     }
   }
+  border-bottom: 1px solid red;
+  margin-bottom: $spacer;
 }
