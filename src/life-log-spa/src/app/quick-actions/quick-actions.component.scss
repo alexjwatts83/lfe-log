@@ -2,7 +2,7 @@
 
 .quick-actions-container {
   background-color: $light-blue;
-  border: $large-border dashed $dark-blue;
+  border: $large-border solid $light-purple;
   .quick-action {
     input {
       width: $input-width;

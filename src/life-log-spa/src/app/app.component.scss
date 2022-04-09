@@ -1,9 +1,11 @@
 @import './../variables.scss';
 .main {
-  height: 100vh;
+  height: 95vh;
+  padding: $small-spacer;
   background-color: $main-bg-colour;
+  border: $large-border dotted $magenta;
   .content {
-    border: 0px dotted $content-bg-colour;
+    
     background-color: $content-bg-colour;
   }
 }
