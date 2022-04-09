@@ -4,10 +4,11 @@
   display: flex;
   .menu-item {
     text-decoration: none;
+    color: inherit;
     span {
       font-variant: small-caps;
     }
   }
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid $red;
   margin-bottom: $spacer;
 }
