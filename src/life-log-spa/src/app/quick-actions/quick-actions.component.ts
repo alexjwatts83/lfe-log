@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
+import { Observable } from 'rxjs';
 import { QuickActions } from './models';
 import { QuickActionsService } from './services/quick-actions.service';
 
@@ -11,11 +12,12 @@ import { QuickActionsService } from './services/quick-actions.service';
 export class QuickActionsComponent implements OnInit {
   faPlus = faPlus;
   faMinus = faMinus;
-  quickActions: QuickActions[] = [];
+  quickActions$: Observable<QuickActions[]>;
 
-  constructor(private quickActionsService: QuickActionsService) { }
+  constructor(private quickActionsService: QuickActionsService) {
+    this.quickActions$ = this.quickActionsService.getQuickActions();
+   }
 
   ngOnInit(): void {
   }
-
 }
