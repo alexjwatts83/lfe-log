@@ -1,11 +1,10 @@
 @import './../variables.scss';
 .main {
-  height: 95vh;
+  height: auto;
   padding: $small-spacer;
   background-color: $main-bg-colour;
-  border: $large-border dotted $magenta;
+  @include container-border($dark-red);
   .content {
-    
     background-color: $content-bg-colour;
   }
 }
