@@ -7,7 +7,7 @@ import { QuickActions, QuickActionsAction } from '../models';
 })
 export class QuickActionsService {
   private data: QuickActions[] = [];
-  private _goals$ = new BehaviorSubject<QuickActions[]>(this.data);
+  private _quickActions = new BehaviorSubject<QuickActions[]>(this.data);
 
   constructor() { 
     this.data = [
@@ -22,4 +22,10 @@ export class QuickActionsService {
       } as QuickActions
     ]
   }
+
+  getQuickActions() {
+    return this._quickActions.asObservable();
+  }
+
+  
 }
