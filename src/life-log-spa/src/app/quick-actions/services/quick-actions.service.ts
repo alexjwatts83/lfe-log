@@ -27,5 +27,7 @@ export class QuickActionsService {
     return this._quickActions.asObservable();
   }
 
-  
+  setQuickActions(quickActions: QuickActions[]) {
+    this._quickActions.next(quickActions);
+  }
 }
