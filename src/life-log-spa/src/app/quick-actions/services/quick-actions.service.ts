@@ -7,7 +7,7 @@ import { QuickActions, QuickActionsAction } from '../models';
 })
 export class QuickActionsService {
   private data: QuickActions[] = [];
-  private _quickActions = new BehaviorSubject<QuickActions[]>(this.data);
+  private _quickActions: BehaviorSubject<QuickActions[]>; // = new BehaviorSubject<QuickActions[]>(this.data);
 
   constructor() { 
     this.data = [
@@ -20,7 +20,9 @@ export class QuickActionsService {
           } as QuickActionsAction<number>
         ]
       } as QuickActions
-    ]
+    ];
+    this._quickActions = new BehaviorSubject<QuickActions[]>(this.data);
+    // this.setQuickActions(this.data);
   }
 
   getQuickActions() {
