@@ -13,9 +13,10 @@
     <button type="button">Add</button>
   </div> -->
   <ng-container *ngIf="quickActions$ |async as quickActions">
-    get here
-    <div class="quick-action" *ngFor="">
-      <h3>Medical</h3>
+    <div class="quick-action" *ngFor="let quickAction of quickActions">
+      <h3>
+        {{ quickAction.groupTitle}}
+      </h3>
       <!-- <span class="quick-action-task">Panandol</span>
       <input type="number" value="2">
       <button type="button">
