@@ -22,7 +22,6 @@ export class QuickActionsService {
       } as QuickActions
     ];
     this._quickActions = new BehaviorSubject<QuickActions[]>(this.data);
-    // this.setQuickActions(this.data);
   }
 
   getQuickActions() {
